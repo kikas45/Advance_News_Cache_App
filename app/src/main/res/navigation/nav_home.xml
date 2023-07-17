@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeOne">
+    <fragment
+        android:id="@+id/homeOne"
+        android:name="com.example.advancenetworkcahing.ui.home.HomeOne"
+        android:label="fragment_home_one"
+        tools:layout="@layout/fragment_home_one" >
+        <action
+            android:id="@+id/action_homeOne_to_homeTwo"
+            app:destination="@id/homeTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeTwo"
+        android:name="com.example.advancenetworkcahing.ui.home.HomeTwo"
+        android:label="fragment_home_two"
+        tools:layout="@layout/fragment_home_two" >
+        <action
+            android:id="@+id/action_homeTwo_to_homeThree"
+            app:destination="@id/homeThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeThree"
+        android:name="com.example.advancenetworkcahing.ui.home.HomeThree"
+        android:label="fragment_home_three"
+        tools:layout="@layout/fragment_home_three" />
+</navigation>
